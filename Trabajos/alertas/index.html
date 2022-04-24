@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Alertify</title>
+
+	<link rel="stylesheet" type="text/css" href="alertifyjs/css/alertify.css">
+	<link rel="stylesheet" type="text/css" href="alertifyjs/css/themes/semantic.css">
+	<link rel="stylesheet" type="text/css" href="alertifyjs/css/themes/default.css">
+	
+	<script src="jquery.js"></script>
+	<script src="alertifyjs/alertify.js"></script>
+</head>
+<body>
+	<button id="Guardar"> Guardado </button>
+	<button id="Eliminar"> Eliminado </button>
+	<button id="Preguntar"> Preguntar </button>
+	<button id="Advertencia"> Advertencia </button>
+	<button id="Enviar"> Enviado </button>
+</body>
+</html>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#Guardar').click(function(){
+
+			alertify.success('Guardado');			
+		})
+
+			
+
+			$('#Eliminar').click(function(){
+
+			alertify.error('Eliminado');			
+		})
+
+		$('#Preguntar').click(function(){
+
+			alertify.confirm('CPA','Estas seguro que quieres borrarlo?' ,function(){ alertify.success('ok')}, function(){alertify.error('Cancelado')});
+
+		})
+
+		$('#Advertencia').click(function(){
+
+			alertify.alert('Atento');			
+		})	
+
+		$('#Enviar').click(function(){
+
+			alertify.success('Enviado');			
+		})	
+	})
+
+</script>

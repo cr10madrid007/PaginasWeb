@@ -1,0 +1,40 @@
+.maps{
+   width: 100%;
+   text-align: center;
+   margin-bottom: 100px;
+  }
+
+.fab {
+   padding: 20px;
+   font-size: 30px;
+   width: 30px;
+   text-align: center;
+   text-decoration: none;
+   margin: 5px 2px;
+   border-radius: 50%;
+   }
+   
+.fab:hover {
+   opacity: 0.7;
+   }
+   
+.fa-whatsapp {
+   background: #45bbff;
+   color: white;
+   }
+.enlacesSociales{
+   text-align: center;
+   font-size: medium;
+}
+
+.rsE {
+   text-align: center;
+   
+}
+
+
+
+.banner{
+   width: 100%;
+   min-height: 100px;
+ }
